@@ -1,0 +1,159 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%);}
+*{
+    padding:0px;
+    margin:0px;
+}
+:root{
+    --ligntfont:#898989;
+    --mulbery:#864cff;
+    --blackfont:black;
+    --bgcolor:#f0f0f0;
+    --border: rgba(208, 205, 205, 0.377);
+}
+@font-face {
+    font-family:poppins ;
+    src: url("assets/fonts/Poppins-BoldItalic.ttf");
+  }
+body{
+    font-family: poppins;
+ 
+  height: 100vh;
+  background-color: var(--bgcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+    padding: 40px;
+    height: 50%;
+    width: 400px;
+    background-color: white;
+    border-radius: 3%;
+    &.container{
+    border-bottom-right-radius: 25%;
+    }
+}
+#icon{
+    position: relative;
+    left:360px;
+    top:25px;
+    height: 45px;
+    width: 45px;
+    background-color: var(--mulbery);
+    border-radius: 50%;
+    padding: 5px;
+    right: 0px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+#icon svg{
+    position: relative;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+}
+input[type=number]{
+    height: 30px;
+    padding-left: 5px;
+    width: 80px;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    margin-right: 30px;
+    margin-bottom:1.4rem;
+}
+::placeholder{
+    font-weight: bold;
+}
+.inputs{
+    position: relative;
+    border-bottom: 2px solid var(--border);
+}
+.inputs .text{
+    position: absolute;
+    font-weight: bold;
+    color: var(--ligntfont);
+    top:-14px;
+    font-size: 0.6rem;
+}
+.inputs .err{
+    color: red;
+    position: absolute;
+    bottom: 60px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.6rem;
+    margin-left: 5px;
+}
+.output p{
+    font-size: 3rem;
+    font-weight: bolder;
+}
+.output span{
+    font-size: 3.5rem;
+    color: var(--mulbery);
+}
+@media all and (max-width:700px) {
+
+    .container {
+        padding: 40px;
+        height: 50%;
+        width: 400px;
+        background-color: white;
+        border-radius: 3%;
+    }
+    #icon {
+        position: relative;
+        top: 50%;
+        height: 45px;
+        width: 45px;
+        background-color: var(--mulbery);
+        border-radius: 50%;
+        padding: 5px;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+    input[type=number] {
+        height: 30px;
+        padding-left: 5px;
+        width: 60px;
+        border-radius: 4px;
+        border: 1px solid var(--border);
+        margin-left: -2px;
+
+        margin-bottom: 1.4rem;
+    }
+    .container {
+        padding: 40px;
+        height: 350px;
+        width: 100%;
+        background-color: white;
+        border-radius: 3%;
+    }
+    .output p {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .output p {
+        font-size: 2rem;
+        font-weight: bolder;
+    }
+    .inputs .err {
+        color: red;
+        position: absolute;
+        bottom: 60px;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 0.5rem;
+        margin-left: 5px;
+    }
+    .output span {
+        font-size: 2.5rem;
+        color: var(--mulbery);
+    }
+    .output{
+        margin-top: 10%;
+    }
+}
+
+
+
